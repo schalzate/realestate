@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Services | Pleasanton Real Estate | Julie Hansen Partnership</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <style media="screen">
+    h1 {
+      font-family: 'Merriweather', serif;
+    }
+
+    h6 {
+      font-family: 'Cormorant Garamond', serif;
+    }
+    .navbar{
+      padding-top: 2%;
+    }
+
+    .navbarSize {
+      width: 30%;
+      height: auto;
+    }
+
+    .nav-item {
+      text-align: center;
+      font-size: 1.5rem;
+      padding-top: 1.5rem;
+    }
+
+    .nav-link:hover {
+      color: #121212 !important;
+    }
+
+    .navbar-dark.scrolled {
+      background: #2E2D2D !important;
+    }
+
+    .boxHeader {
+      position: relative;
+      background-color: black;
+    }
+
+    .headerImage {
+      width: 100%;
+      opacity: 0.5;
+      height: 700px;
+    }
+
+    .headerText{
+      position: absolute;
+      top: 1.5%;
+      left: 7%;
+      right: 10%;
+      bottom: 1.5%;
+    }
+
+    .headerBanner {
+      color: white;
+      font-size: 6rem;
+      padding-bottom: 2%;
+    }
+
+    .subheaderText {
+      color: white;
+      font-size: 1.5rem;
+      padding-bottom: 1.5rem;
+    }
+
+    .search {
+      width: 100%;
+      position: relative;
+      display: flex;
+    }
+    .searchTerm {
+      width: 100%;
+      border: 3px solid #9F9E9E;
+      border-right: none;
+      border-radius: 5px 0 0 5px;
+      outline: none;
+      color: white;
+      background-color: #9F9E9E;
+    }
+
+
+    .searchTerm{
+      color: white;
+    }
+
+    .searchButton {
+      width: 40px;
+      height: 36px;
+      border: 1px solid #9F9E9E;
+      background: #9F9E9E;
+      text-align: center;
+      color: black;
+      border-radius: 0 5px 5px 0;
+      cursor: pointer;
+      font-size: 20px;
+    }
+
+    .wrap{
+      width: 60%;
+    }
+
+    ::placeholder {
+        color: white;
+    }
+
+    .appointmentForm {
+      background-color: white;
+      opacity: 0.7;
+      text-align: center;
+      margin-left: 10%;
+      margin-right: 7%;
+      border-radius: 5px 5px 5px 5px;
+    }
+
+    .formHeader{
+      padding-top: 3%;
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+
+    .formSubtext {
+      padding-bottom: 3%;
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+
+    .formDetails {
+      opacity: 1;
+      background-color: #9F9E9E;
+      border-radius: 5px 5px 5px 5px;
+      width: 75%;
+      margin-bottom: 5%;
+      border: 1px solid #9F9E9E;
+      font-family: 'Cormorant Garamond', serif;
+      color: black;
+    }
+
+    .submitFormButton {
+      margin-bottom: 3%;
+      width: 25%;
+      border-radius: 5px 5px 5px 5px;
+      border: 1px solid #9F9E9E;
+      background-color: black;
+      padding: 0.2rem;
+      color: white;
+    }
+
+    .submitFormButton:hover{
+      background-color: white;
+      color: #9F9E9E;
+    }
+
+    .marketingContainer {
+        position: relative;
+    }
+
+    .marketingPhoto {
+      width: 100%;
+      opacity: 0.2;
+    }
+
+    .marketingHeader {
+      text-align: center;
+      background: white;
+      padding-top: 5%;
+    }
+
+    .marketingHeaderText {
+      font-size: 3.5rem;
+      margin: 0;
+    }
+
+    .marketingCardsGroup {
+      position: absolute;
+      top: 15%;
+      margin: 0;
+    }
+
+    .marketingCard {
+      color: black;
+      text-align: center;
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+
+    .marketingImage {
+      border-radius: 50%;
+      border: 1px solid #9F9E9E;
+      width: 7rem;
+    }
+
+    .marketingSubtext {
+      font-size: 1.5rem;
+    }
+
+    .topCards {
+      padding-bottom: 5rem;
+    }
+
+    .bottomCards {
+      padding-bottom: 0;
+    }
+
+    .decorHeader {
+      color: white;
+      text-align: center;
+      font-size: 3rem;
+      padding-top: 25%;
+      padding-bottom: 25%;
+    }
+
+    .decorImage {
+      width: 100%
+    }
+
+    .decorSubheader {
+      color: white;
+      font-size:3rem;
+      font-family: 'Merriweather', serif;
+      padding-top: 15%;
+      padding-bottom: 1rem;
+    }
+
+    .listedDecorItems {
+      font-family: 'Cormorant Garamond', serif;
+      color: white;
+      font-size: 1.2rem;
+      padding: 0.7rem;
+    }
+
+    .decorAlignment {
+      text-align: center;
+    }
+
+    .lastDecorItem {
+      padding-bottom: 3rem;
+    }
+
+    .decorPadding {
+      padding: 0;
+      margin: 0;
+    }
+
+    .sellingProcess {
+      text-align: center;
+      padding: 0;
+      margin: 0;
+      position: relative;
+      color: white;
+    }
+
+    .sellingProcessImage {
+        width: 100%;
+        opacity: 0.5;
+    }
+
+    .sellingText {
+      position: absolute;
+      text-align: center;
+      top: 1.5%;
+      left: 10%;
+      right: 10%;
+      bottom: 1.5%;
+    }
+
+    .sellingHeader {
+        font-size: 4rem;
+
+    }
+
+    .sellingSecondText {
+      position: absolute;
+      top: 3%;
+      left: 10%;
+      right: 10%;
+      bottom: 3%;
+    }
+
+    .sellingSubheader {
+      text-align: center;
+      font-size: 3rem;
+      padding-bottom: 1rem;
+    }
+
+    .sellingSubtext {
+      text-align: center;
+      font-size: 2rem;
+      padding-bottom: 2rem;
+    }
+
+    .topSelling {
+      padding-bottom: 1rem;
+    }
+
+    .buyingHeader {
+        font-size: 4rem;
+        padding-top: 1rem;
+    }
+
+    .buyingSecondText {
+      position: absolute;
+      top: 3%;
+      left: 10%;
+      right: 10%;
+      bottom: 3%;
+    }
+
+
+    @media (max-width: 1000px) {
+      .sellingSubtext {
+        text-align: center;
+        font-size: 1rem;
+        padding: 0;
+      }
+    }
+
+
+    .aboutPage {
+      background: white;
+      color: black;
+      text-align: center;
+    }
+
+    .aboutHeader {
+      padding: 15% 5% 7%;
+      font-size: 3rem;
+    }
+
+    .aboutText {
+      padding-left: 10%;
+      padding-right: 10%;
+      font-size: 1.2rem;
+    }
+
+    .commsTable {
+      padding-bottom: 2rem;
+    }
+
+    .commsTabletHeader {
+      font-size: 3rem;
+      padding-top: 7%;
+      padding-bottom: 4%;
+    }
+
+    .commsTabletText {
+      font-size: 1.2rem;
+      padding-left: 20%;
+      padding-right: 20%;
+      padding-bottom: 1.5rem;
+    }
+
+    .commsTablet2 {
+      background-color:#2E2D2D;
+    }
+
+    .commsTablet2Text {
+      color: white;
+      font-size: 2em;
+      padding-top: 3rem;
+      padding-left: 20%;
+      padding-right: 20%;
+      padding-bottom: 3rem;
+    }
+
+    .commsTablet2Header {
+      color: white;
+      font-size: 3rem;
+      padding-top: 1.5rem;
+      padding-bottom: 3rem;
+    }
+
+    .homeMarket {
+      position: relative;
+      padding: 0;
+      text-align: center;
+    }
+
+    .homeMarketImage {
+      width: 100%;
+      opacity: 0.3;
+    }
+
+    .homeMarketText {
+      text-align: center;
+      position: absolute;
+      top:15%;
+      left: 15%;
+      right: 15%;
+      bottom: 15%;
+    }
+
+    .homeMarketHeader {
+      color: white;
+      font-size: 5rem;
+    }
+
+    .homeMarketSubheader {
+      color: white;
+      font-size: 2rem;
+      padding-top: 5rem;
+    }
+
+    .homeMarketText1 {
+      color: white;
+      font-size: 1.2rem;
+      padding-top: 1.5rem;
+    }
+
+    @media (max-width: 1000px) {
+
+    .homeMarketHeader {
+        color: white;
+        font-size: 2rem;
+      }
+    .homeMarketSubheader {
+        color: white;
+        font-size: 1rem;
+      }
+    .homeMarketText1 {
+        color: white;
+        font-size: 0.9rem;
+      }
+
+    }
+
+    .threeImage {
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .threeImage1 {
+        width: 25%;
+    }
+
+    .luxuryImage {
+      padding-top: 25%;
+      width: 20%;
+      padding-left: 2rem;
+    }
+
+    .luxuryImage2 {
+      padding-top: 5%;
+      width: 20%;
+      padding-left: 2rem;
+    }
+
+    .luxuryHeader {
+      padding: 15% 5% 3%;
+      padding-left: 10%;
+      padding-right: 10%;
+      font-size: 1.2rem;
+    }
+
+    .luxuryText{
+      padding-left: 10%;
+      padding-right: 10%;
+      font-size: 1.2rem;
+      padding-top: 5%;
+    }
+
+    .luxuryText2 {
+      padding-left: 10%;
+      padding-right: 10%;
+      font-size: 1.2rem;
+      padding-top: 35%;
+    }
+
+    .lastTextLuxury {
+      padding-bottom: 10%;
+    }
+
+    .workWithUS {
+      position: relative;
+      padding: 0;
+      text-align: center;
+    }
+
+    .workWithUSText {
+      position: absolute;
+    }
+
+    .workWithUSText {
+      top: 35%;
+      left: 20%;
+      right: 20%;
+      bottom: 30%;
+    }
+
+    .workWithUSText1 {
+      padding-bottom: 5%;
+    }
+
+    .myButton {
+      box-shadow:inset -50px -50px 0px -50px #ffffff;
+      background-color:transparent;
+      border:1px solid #ffffff;
+      display:inline-block;
+      cursor:pointer;
+      color:#ffffff;
+      font-family:Arial;
+      font-size:15px;
+      font-weight:bold;
+      padding:20px 47px;
+      text-decoration:none;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.2rem;
+
+    }
+    .myButton:hover {
+      background-color:white;
+      color: black;
+    }
+    .myButton:active {
+      position:relative;
+      top:1px;
+    }
+
+    .myButton2 {
+      box-shadow:inset -50px -50px 0px -50px #ffffff;
+      background-color:transparent;
+      border:1px solid black;
+      display:inline-block;
+      cursor:pointer;
+      color: black;
+      font-family:Arial;
+      font-size:5px;
+      font-weight:bold;
+      padding:3px 20px;
+      text-decoration:none;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.2rem;
+
+    }
+    .myButton2:hover {
+      background-color: grey;
+      color: white;
+    }
+    .myButton2:active {
+      position:relative;
+      top:1px;
+    }
+
+    .socialMediaIcons {
+      background-color: black;
+      color: white;
+      padding: 1rem;
+      border-radius: 100%;
+    }
+
+    .footerImage {
+      width: 9%;
+      padding-left: 1rem;
+      text-align: left;
+    }
+
+    .footerHeader {
+      padding-top: 2rem;
+      text-align: left;
+    }
+
+    .footerText {
+      text-align: left;
+    }
+
+    .footerClass {
+      text-align: left;
+      padding: 2rem;
+    }
+
+    .footerSubheader {
+      font-size: 1rem;
+      text-align: left;
+    }
+
+    .footerPadding {
+      padding-top: 2rem;
+    }
+
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap" rel="stylesheet">
+  </head>
+
+
+
+  <body id="Services">
+
+
+    <nav class="navbar navbar-dark fixed-top">
+      <div class="container-fluid">
+        <img class="navbarSize" src="https://res.cloudinary.com/luxuryp/images/w_960,c_limit,f_auto,q_auto/tprhoiglqzbp9mbu8x8s/jhsereno-light" alt="">
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link" style="color:#9F9E9E;" href="https://hansenpartners.net/">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" style="color:#9F9E9E;" href="https://hansenpartners.net/team">Meet the Team</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" style="color:#9F9E9E;" href="https://hansenpartners.net/home-search/listings">Search for Homes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" style="color:#9F9E9E;" href="https://hansenpartners.net/neighborhoods">Our Communities</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" style="color:#9F9E9E;" href="https://hansenpartners.net/home-valuation">Home Valuation</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" style="color:#9F9E9E;" href="#Services">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" style="color:#9F9E9E;" href="https://hansenpartners.net/FeaturedListingHOA">Homes Across America</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" style="color:#9F9E9E;" href="https://hansenpartners.net/testimonials">Testimonials</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" style="color:#9F9E9E;" href="#Footer">Contact Us</a>
+                </li>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+        <div class="boxHeader" id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-interval="500">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-interval="500">
+                <img class="headerImage" src="https://images.unsplash.com/photo-1565182999561-18d7dc61c393?ixlib&#x3D;rb-1.2.1&amp;q&#x3D;85&amp;fm&#x3D;jpg&amp;crop&#x3D;entropy&amp;cs&#x3D;srgb&amp;ixid&#x3D;eyJhcHBfaWQiOjQxNDUyfQ&amp;w&#x3D;1920" alt="Header 1">
+              </div>
+            <div class="carousel-item">
+                <img class="headerImage" src="https://res.cloudinary.com/luxuryp/images/w_1920,c_limit,f_auto,q_auto/fqr5nlqlipszbgi4peh7/45" alt="Header 2">
+              </div>
+            <div class="carousel-item">
+                <img class="headerImage" src="https://res.cloudinary.com/luxuryp/images/w_1920,c_limit,f_auto,q_auto/oloxyay5w6o32z2ipjk2/10" alt="Header 3">
+                  </div>
+              </div>
+              <div class="headerText row">
+                <div class="col-md-6">
+                <h1 class="headerBanner">Services</h1>
+                <h6 class="subheaderText">We provide world class service with utmost professionalism.</h6>
+                <div class="wrap">
+                   <div class="search">
+                      <input type="text" class="searchTerm" placeholder="Search by Address or Area">
+                      <button type="submit" class="searchButton">
+                        <i class="fa fa-search"></i>
+                     </button>
+                      </div>
+                   </div>
+                </div>
+              <div class="col-md-6">
+                <div class="appointmentForm form-group">
+                  <form action="index.html" method="post">
+                    <h1 class="formHeader">Book an Appointment</h1>
+                    <h6 class="formSubtext">Fill out the details for information.</h6>
+                      <input type="text" class="formDetails" placeholder="Full Name"><br>
+                      <input type="text" class="formDetails" placeholder="Phone Number"><br>
+                      <input type="text" class="formDetails" placeholder="Email Address"><br>
+                      <textarea class="formDetails" placeholder="Message" rows="3" cols="60"></textarea><br>
+                      <input type="submit" class="submitFormButton" value="Submit">
+                  </form>
+                </div>
+              </div>
+          </div>
+
+          <div class="marketingHeader">
+            <h1 class="marketingHeaderText">Comprehensive Marketing Plan</h1>
+          </div>
+          <div class="marketingContainer" style="background:white;">
+            <img class="marketingPhoto" src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/hqguvxyyi5jciyrzy35v/page-3" alt="Marketing Photo">
+            <div class="marketingCardsGroup row">
+                <div class="marketingCard topCards col-sm-4">
+                  <img class="marketingImage" src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/rmtn3r5zpsljdsncbwa4/image-007" alt="marketingCard1">
+                  <h1>Responsive</h1>
+                  <h6 class="marketingSubtext">I am always available via phone, text, or email.</h6>
+                </div>
+                <div class="marketingCard topCards col-sm-4">
+                  <img class="marketingImage" src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/ks8ztlvw2b35q5qgs6xn/image-011" alt="marketingCard1">
+                  <h1>Syndication</h1>
+                  <h6 class="marketingSubtext">I market your property locally, nationally, and internationally</h6>
+                </div>
+                <div class="marketingCard topCards col-sm-4">
+                  <img class="marketingImage" src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/zr3bugldblvebixagfs1/image-009" alt="marketingCard1">
+                  <h1>Virtual Tour</h1>
+                  <h6 class="marketingSubtext">Let's make your home stand out with a high quality virtual tour.</h6>
+                </div>
+                <div class="row">
+                  <div class="marketingCard bottomCards col-sm-6">
+                    <img class="marketingImage" src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/zr3bugldblvebixagfs1/image-009" alt="marketingCard1">
+                    <h1>Photography</h1>
+                    <h6 class="marketingSubtext">Beatiful, high-end photography is a central part of our marketing plan for your property.</h6>
+                  </div>
+                  <div class="marketingCard bottomCards col-sm-6">
+                    <img class="marketingImage" src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/qljffx423kswkhh1oyc3/image-081" alt="marketingCard1">
+                    <h1>Drone Photography</h1>
+                    <h6 class="marketingSubtext">Beautiful photography is a central part of our marketing plan for your property.</h6>
+                  </div>
+                </div>
+            </div>
+          </div>
+
+          <div class="row decorAlignment decorPadding">
+            <div class="col-lg-6 decorPadding">
+              <h1 class="decorHeader">Decor Guidance</h1>
+            </div>
+            <div class="col-lg-6 decorPadding">
+                <img class="decorImage" src="https://res.cloudinary.com/luxuryp/images/w_1280,c_limit,f_auto,q_auto/ghtq7jtce7tsgdjtosrs/image-025" alt="DecorImage1">
+            </div>
+
+
+            <div class="row decorPadding">
+              <div class="col-lg-6 decorPadding">
+                <img class="decorImage" src="https://res.cloudinary.com/luxuryp/images/w_1280,c_limit,f_auto,q_auto/axx0whb7xfmlwhvcckrr/image-023" alt="DecorImage2">
+              </div>
+              <div class="col-lg-6 decorPadding">
+                <h2 class="decorSubheader">My Staging Expertise</h2>
+                  <h6 class="listedDecorItems">Unclutter and organize your home</h6>
+                  <h6 class="listedDecorItems">Neatly arrange drawers and cabinets</h6>
+                  <h6 class="listedDecorItems">Keep pets outdoors or off the premises</h6>
+                  <h6 class="listedDecorItems lastDecorItem">Play soft music</h6>
+              </div>
+            </div>
+
+
+            <div class="row decorAlignment decorPadding">
+              <div class="col-lg-6 decorPadding">
+                <h1 class="decorHeader">Intentional Layout</h1>
+              </div>
+              <div class="col-lg-6 decorPadding">
+                  <img class="decorImage" src="https://res.cloudinary.com/luxuryp/images/w_1280,c_limit,f_auto,q_auto/tvntwvzwsjyi3ndwtpux/image-022" alt="DecorImage1">
+              </div>
+
+
+              <div class="row decorPadding">
+                <div class="col-lg-6 decorPadding">
+                  <img class="decorImage" src="https://res.cloudinary.com/luxuryp/images/w_1280,c_limit,f_auto,q_auto/lpaq7euqjebackcuwsdu/image-024" alt="DecorImage2">
+                </div>
+                <div class="col-lg-6 decorPadding">
+                  <h2 class="decorSubheader">Modern and Stylish Homes</h2>
+                    <h6 class="listedDecorItems">Exceptional Interior Design</h6>
+                    <h6 class="listedDecorItems">Modern and Stylish Layouts</h6>
+                    <h6 class="listedDecorItems">Light and Good Ambiance</h6>
+                    <h6 class="listedDecorItems lastDecorItem">Color Themed Rooms</h6>
+                </div>
+              </div>
+
+
+              <div class="sellingProcess">
+                <img class="sellingProcessImage" src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/gihsg13plfsb8xfbzmlf/image-027" alt="Selling">
+                <div class="sellingText">
+                  <h1 class="sellingHeader">The Selling Process</h1>
+                </div>
+                <div class="sellingSecondText">
+                <div class="row topSelling">
+                  <div class="col-sm-4">
+                    <h1 class="sellingSubheader">1</h1>
+                    <h6 class="sellingSubtext">Initial Consultation & Planning</h6>
+                  </div>
+                  <div class="col-sm-4">
+                    <h1 class="sellingSubheader">2</h1>
+                    <h6 class="sellingSubtext">Devise & Execute Marketing Plan</h6>
+                  </div>
+                  <div class="col-sm-4">
+                    <h1 class="sellingSubheader">3</h1>
+                    <h6 class="sellingSubtext">Review Offers & Reach Agreement with Buyer</h6>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <h1 class="sellingSubheader">4</h1>
+                    <h6 class="sellingSubtext">Complete Transaction Process</h6>
+                </div>
+                <div class="col-sm-6">
+                  <h1 class="sellingSubheader">5</h1>
+                  <h6 class="sellingSubtext">After - Sale Service</h6>
+              </div>
+            </div>
+            </div>
+
+            <div class="sellingProcess">
+              <img class="sellingProcessImage" src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/nhcjbdzbycjvfcks0nqe/image-004" alt="Selling">
+              <div class="sellingText">
+                <h1 class="buyingHeader">The Buying Process</h1>
+              </div>
+              <div class="buyingSecondText">
+              <div class="row topSelling">
+                <div class="col-sm-6">
+                  <h1 class="sellingSubheader">1</h1>
+                  <h6 class="sellingSubtext">Initial Consultation & Planning</h6>
+                </div>
+                <div class="col-sm-6">
+                  <h1 class="sellingSubheader">2</h1>
+                  <h6 class="sellingSubtext">Search for a Home & Get Pre-Approved</h6>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6">
+                  <h1 class="sellingSubheader">3</h1>
+                  <h6 class="sellingSubtext">Submit an Offer</h6>
+              </div>
+              <div class="col-sm-6">
+                <h1 class="sellingSubheader">4</h1>
+                <h6 class="sellingSubtext">Complete Settlement Process</h6>
+            </div>
+          </div>
+          </div>
+
+
+          <div class="row decorAlignment decorPadding aboutPage"style="background:white;">
+            <div class="col-lg-6 decorPadding">
+                <img class="decorImage" src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/azjfmtzx6evxpubynfci/edit-page-11r2" alt="About1">
+            </div>
+            <div class="col-lg-6 decorPadding">
+              <h1 class="aboutHeader">Over 33 Years of Real Estate Success</h1>
+              <h6 class="aboutText">We provide every one of our clients with a level of service they won’t find anywhere else. We give them what they need, often before they know they need it. ​​​​​​​In real estate, almost everything can be negotiated. When you choose Hansen Partners It is experience is 100% nonnegotiable. ​​​​​​​ ​​​​​​​And it’s an experience like no other.</h6>
+            </div>
+            </div>
+
+          <div class="row decorAlignment decorPadding aboutPage"style="background:white;">
+              <div class="col-lg-6 decorPadding">
+                <h1 class="aboutHeader">We Want To Create An Unforgettable Experience For You...</h1>
+                <h6 class="aboutText">We combine data gained from your home’s Comparative Market Analysis with local market research to create a marketing plan designed to help you meet your selling goals. Your home’s carefully designed plan will include a range of online, print, and other marketing tools targeted to the best-qualified pool of buyers. ​​​​​​​ Successfully marketing a home in today’s real estate environment requires a firm with experience and flexibility. Hansen Partners provides both.</h6>
+              </div>
+              <div class="col-lg-6 decorPadding">
+                  <img class="decorImage" src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/m5ea1kpipv5tiflnfx8t/edited-p-12" alt="About2">
+              </div>
+
+              <div class="row decorAlignment decorPadding aboutPage"style="background:white;">
+                <div class="col-lg-6 decorPadding">
+                    <img class="decorImage" src="https://res.cloudinary.com/luxuryp/images/w_1280,c_limit,f_auto,q_auto/fuammgjubhjfvgcqleef/edit-image-056" alt="About3">
+                </div>
+                <div class="col-lg-6 decorPadding">
+                  <h1 class="aboutHeader">The Hansen Partners Communications Tablet</h1>
+                  <h6 class="aboutText">We have created this as a wonderful tool so that we can communicate with you daily, provide you with updates on what is happening with your home. We are available at the with a click of your tablet.</h6>
+                </div>
+                </div>
+
+
+              <div class="commsTable" style="background:white;">
+                <h1 class="commsTabletHeader">Benefits of Communications Tablet</h1>
+                <h6 class="commsTabletText">Review all documents and sign in the comfort of your home or anywhere.</h6>
+                <h6 class="commsTabletText">Stay up to date on all marketing activities, review materials, photos, etc. in real time.</h6>
+                <h6 class="commsTabletText">Meet with us face to face on our Gotomeeting.com platform to go over and discuss the events of the week.</h6>
+                <h6 class="commsTabletText">You have your own email assigned just for you and your common space to quickly write a note, or quickly send a video message to us for fast communication using our Bomb bomb video messaging system.</h6>
+              </div>
+
+              <div class="commsTablet2">
+                <h6 class="commsTablet2Text">We believe that transparency and guiding you and your family through the process is key to having the best experience.  During these uncertain times. It is a good feeling to know you have some one with a proven track record you can count on.  We will be here to handle your needs during the Real Estate process.  We think of it before a need even arises. Because, that is just what we do. </h6>
+                <h1 class="commsTablet2Header">Who you work with does matter!</h1>
+              </div>
+
+              <div class="homeMarket" style="background:black;">
+                <img class="homeMarketImage" src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/cxhlbkywmtea8csrvyfa/3" alt="">
+                <div class="homeMarketText">
+                  <h1 class="homeMarketHeader">We Market Your Home to The World</h1>
+                  <h6 class="homeMarketSubheader">Our Online Marketing Strategy</h6>
+                  <h6 class="homeMarketText1">​​​​​​​The Bay Area remains one of the world's most sought-after regions to live in, and when looking to sell, it is vital that your home be marketed online to audiences locally, nationally, and internationally.</h6>
+                <div class="row">
+                  <div class="col-sm-4">
+                    <h1 class="homeMarketSubheader">Local Exposure</h1>
+                    <h6 class="homeMarketText1">Through our partnership with Nextdoor, the private online social network now used in over 80% of U.S. neighborhoods and virtually all Bay Area neighborhoods, we make sure your home receives targeted local exposure. When you list your home with Hansen Partners it will automatically appear on Nextdoor in your neighborhood.</h6>
+                  </div>
+                  <div class="col-sm-4">
+                    <h1 class="homeMarketSubheader">National Exposure</h1>
+                    <h6 class="homeMarketText1">We secure strategic positioning and enhancement on Realtor.com, Trulia, and Zillow, driving more consumers to your home and increasing exposure. We  will receive every inquiry about your property directly.</h6>
+                  </div>
+                  <div class="col-sm-4">
+                    <h1 class="homeMarketSubheader">International Exposure</h1>
+                    <h6 class="homeMarketText1">To expose your luxury listing to millions of potential homebuyers worldwide, we promote on prominent international real estate portals, including: Wall Street Journal, LuxuryPortfolio.com, LuxuryRealEstate.com, LeadingRE.com, UniqueHomes.com, China.apr.com, Caimeiju, Juwai, Country Life UK</h6>
+                  </div>
+                </div>
+                </div>
+              </div>
+
+              <div class="threeImage">
+                <img class="threeImage1" src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/olcvsnzpdrd5tov8dbci/image-057" alt="">
+              </div>
+
+              <div class="row decorAlignment decorPadding aboutPage"style="background:white;">
+                <div class="col-lg-6 decorPadding">
+                    <img class="decorImage" src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/og3ockhby4gghmrdfseo/edited-p-19" alt="Luxury">
+                </div>
+                <div class="col-lg-6 decorPadding">
+                  <img class="luxuryImage" src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/p4rjc7oqvxtccrdqejbt/image-060" alt="">
+                  <img class="luxuryImage" src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/ichuh7qj1rsu7mqxpl5p/image-069" alt="">
+                  <img class="luxuryImage" src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/t3i3guvh1dnpwu8mrvuf/image-070" alt="">
+                  <h1 class="luxuryHeader">Leading Real Estate Companies of The World® & Luxury Portfolio International</h1>
+                  <h6 class="luxuryText">We have created this as a wonderful tool so that we can communicate with you daily, provide you with updates on what is happening with your home. We are available at the with a click of your tablet.</h6>
+                </div>
+                </div>
+
+                <div class="row decorAlignment decorPadding aboutPage"style="background:white;">
+                    <div class="col-lg-6 decorPadding">
+                      <h6 class="luxuryText2">Through our international affiliations, we have a strong presence in over 50 countries. Our luxury listings are sent to prominent international real estate sites, reaching over 70 million potential buyers and investors worldwide through our relationships with:</h6>
+                      <img class="luxuryImage2" src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/p4rjc7oqvxtccrdqejbt/image-060" alt="">
+                      <img class="luxuryImage2" src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/ichuh7qj1rsu7mqxpl5p/image-069" alt="">
+                      <img class="luxuryImage2" src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/t3i3guvh1dnpwu8mrvuf/image-070" alt="">
+                      <h6 class="luxuryText lastTextLuxury">We also have several well-positioned affiliate offices in China, providing our clients with access to buyers in Hong Kong, Shanghai, and Beijing.</h6>
+                    </div>
+                    <div class="col-lg-6 decorPadding">
+                        <img class="decorImage" src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/ebvif7iqcx0lcjlvwyuz/edited-page-20" alt="About2">
+                    </div>
+
+
+
+                  <div class="workWithUS" style="background:black;">
+                    <img class="homeMarketImage" src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/skkve0aqzhkkyiytn92d/work-with-us" alt="work with us">
+                    <div class="workWithUSText">
+                      <h1 class="homeMarketHeader">Work With Us</h1>
+                      <h6 class="homeMarketText1 workWithUSText1">With decades of experience in luxurious Tri Valley real estate, our team is here to ensure that your dreams are a reality. Let us guide you through your home buying journey, contact us today!</h6>
+                      <a href="#Footer"><button type="button" class="myButton">Contact Us</button></a>
+                    </div>
+                  </div>
+
+                  <footer class="footerClass" id="Footer">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <h1 class="footerHeader">Julie Hansen Partnership</h1>
+                        <h6 class="footerText">An elite group of the East Bay’s most talented and visionary real estate professionals believed buyers and sellers deserved more from their real estate company. More service. More resources. More integrity. More global reach. In a word, more of everything people should expect when they buy or sell their homes.</h6>
+                      </div>
+                      <div class="col-md-6">
+                        <h1 class="footerHeader">Newsletter</h1>
+                        <h6 class="footerText">Subscribe to our Newsletter for latest news and updates. Stay tuned!</h6>
+                        <input type="email" class="" placeholder="Email">
+                        <button type="button" class="myButton2">Submit</button>
+                      </div>
+                    </div>
+
+                  <div class="row footerPadding">
+                    <div class="col-sm-3">
+                      <h1 class="footerSubheader">ADDRESS</h1>
+                      <h6 class="footerText">5075 Hopyard Road, Suite 110 Pleasanton, CA 94588</h6>
+                      <h6 class="footerText">​​​​​​​Julie Hansen-Orvis | CA DRE# 00934447</h6>
+                    </div>
+                    <div class="col-sm-3">
+                      <h1 class="footerSubheader">CONTACT INFORMATION</h1>
+                      <h6 class="footerText">(925) 980-4925</h6>
+                      <h6 class="footerText">hansenpartners.re@gmail.com</h6>
+                    </div>
+                  </div>
+
+                  <div class="row footerPadding">
+                    <div class="col-md-6">
+                      <a href="https://www.facebook.com/juliehansenpartership"><i class="fab fa-facebook socialMediaIcons footerText "></i></a>
+                      <a href="https://www.instagram.com/hansenorvis/">       <i class="fab fa-instagram socialMediaIcons footerText "></i></a>
+                      <a href="https://www.linkedin.com/in/julie-hansen-orvis-10b99359/"><i class="fab fa-linkedin-in socialMediaIcons footerText "></i></a>
+                    </div>
+                    <div class="col-md-6">
+                      <img class="footerImage footerText " src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/zbesma34ygwklawiysod/dark-realtor-logo_x1vczu" alt="">
+                      <img class="footerImage footerText " src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/siun2nwoji9w7v0mssvy/dark-equal-logo_gahxpa" alt="">
+                      <img class="footerImage footerText " src="https://res.cloudinary.com/luxuryp/images/f_auto,q_auto/qje0mcix0r0qeoiikumu/sereno-logo" alt="">
+                    </div>
+                  </div>
+
+                  <div class="row footerPadding">
+                    <div class="col-md-6">
+                      <h6 class="footerText">Copyright 2021 | Privacy Policy</h6>
+                    </div>
+                    <div class="col-md-6">
+                      <h6 class="footerText">Website Designed & Developed by Luxury Presence.</h6>
+                    </div>
+                  </div>
+
+                  </footer>
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/caac055e2a.js" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+<script type="text/javascript">
+  $(document).scroll(function(){$('nav').toggleClass('scrolled', $(this).scrollTop()> 300);});
+</script>
+
+</html>
